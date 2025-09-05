@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events & Interactivity Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Events & Interactive Elements</h1>
+    </header>
+    <main>
+        <!-- Light/Dark Mode Toggle -->
+        <section id="theme-section">
+            <h2>Light/Dark Mode Toggle</h2>
+            <button id="toggle-theme">Switch to Dark Mode</button>
+        </section>
+
+        <!-- Counter Game -->
+        <section id="counter-section">
+            <h2>Counter Game</h2>
+            <p>Current Count: <span id="count">0</span></p>
+            <button id="increment">Increment</button>
+            <button id="decrement">Decrement</button>
+            <button id="reset">Reset</button>
+        </section>
+
+        <!-- Collapsible FAQ -->
+        <section id="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <button class="faq-question">What is JavaScript?</button>
+                <div class="faq-answer">JavaScript is a programming language for the web.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is an event listener?</button>
+                <div class="faq-answer">An event listener waits for user actions and responds to them.</div>
+            </div>
+        </section>
+
+        <!-- Form Validation -->
+        <section id="form-section">
+            <h2>Sign Up Form</h2>
+            <form id="signup-form" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="name-error"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="email-error"></span>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="password-error"></span>
+
+                <button type="submit">Sign Up</button>
+                <span class="success" id="form-success"></span>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
